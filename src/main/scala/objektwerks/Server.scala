@@ -13,7 +13,7 @@ import java.time.LocalDateTime
 import scala.io.StdIn
 
 object Server {
-  val routes = path("now") {
+  val route = path("now") {
     get { complete(OK -> LocalDateTime.now.toString) }
   }
 
@@ -28,7 +28,7 @@ object Server {
 
     val server = Http()
       .newServerAt(host, port)
-      .bindFlow(routes)
+      .bindFlow(route)
 
     println(s"*** Server started at http://$host:$port/\nPress RETURN to stop...")
 
