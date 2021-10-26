@@ -1,0 +1,7 @@
+.*
+!.gitignore
+project/metals.sbt
+project/project/
+project/target/
+target/
+server.log
