@@ -14,7 +14,9 @@ import scala.io.StdIn
 
 object Server {
   val route = path("now") {
-    get { complete(OK -> LocalDateTime.now.toString) }
+    get {
+      complete(OK -> s"*** Now: ${LocalDateTime.now.toString}")
+    }
   }
 
   def main(args: Array[String]): Unit = {
