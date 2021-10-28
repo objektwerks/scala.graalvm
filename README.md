@@ -19,6 +19,11 @@ Package
 -------
 1. sbt 'show graalvm-native-image:packageBin'
 
+Execute
+-------
+1. ./target/graalvm-native-image/scala.graalvm
+2. curl http://localhost:7979/now
+
 Resources
 ---------
 1. Gaalvm: https://www.graalvm.org/docs/introduction/
