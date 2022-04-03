@@ -16,6 +16,6 @@ libraryDependencies ++= {
     "ch.qos.logback" % "logback-classic" % "1.2.11",
     "com.typesafe.akka" %% "akka-testkit" % akkaVersion % Test,
     "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion % Test,
-    "org.scalatest" %% "scalatest" % "3.2.10" % Test
+    "org.scalatest" %% "scalatest" % "3.2.11" % Test
   )
 }
