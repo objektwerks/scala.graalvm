@@ -3,7 +3,7 @@ enablePlugins(GraalVMNativeImagePlugin)
 name := "scala.graalvm"
 organization := "objektwerks"
 version := "0.1-SNAPSHOT"
-scalaVersion := "2.13.8"
+scalaVersion := "2.13.9"
 libraryDependencies ++= {
   val akkaVersion = "2.6.19"
   val akkaHttpVersion = "10.2.9"
