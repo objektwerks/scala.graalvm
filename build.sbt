@@ -5,7 +5,7 @@ organization := "objektwerks"
 version := "0.1-SNAPSHOT"
 scalaVersion := "2.13.12"
 libraryDependencies ++= {
-  val akkaVersion = "2.6.20" // Don't upgrade due to BUSL 1.1!
+  val akkaVersion = "2.6.21" // Don't upgrade due to BUSL 1.1!
   val akkaHttpVersion = "10.2.10" // Don't upgrade due to BUSL 1.1!
   Seq(
     "com.typesafe.akka" %% "akka-actor" % akkaVersion,
