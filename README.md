@@ -6,6 +6,11 @@ Install
 -------
 >See: https://www.graalvm.org/docs/getting-started/
 
+>Example install on MacOs-M1:
+1. tar -xzf graalvm-jdk-21_macos-aarch64_bin
+2. sudo mv graalvm-jdk-21+35.1 /Library/Java/JavaVirtualMachines
+3. sudo xattr -r -d com.apple.quarantine /Library/Java/JavaVirtualMachines/graalvm-jdk-21+35.1
+
 Test
 ----
 1. sbt clean test
