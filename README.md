@@ -1,6 +1,6 @@
 Scala Graalvm
 -------------
->Akka-Http server built and deployed to Graalvm.
+>Pekko-Http server built and deployed to Graalvm.
 
 Install
 -------
