@@ -8,15 +8,18 @@ libraryDependencies ++= {
   val akkaVersion = "2.6.21" // Don't upgrade due to BUSL 1.1!
   val akkaHttpVersion = "10.2.10" // Don't upgrade due to BUSL 1.1!
   val pekkoVersion = "1.0.1"
+  val pekkoHttpVersion = "1.0.0"
   Seq(
     "org.apache.pekko" %% "pekko-actor" % pekkoVersion,
-    "org.apache.pekko" %% "pekko-http" % "1.0.0",
+    "org.apache.pekko" %% "pekko-http" % pekkoHttpVersion,
     "com.typesafe.akka" %% "akka-actor" % akkaVersion,
     "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
     "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
     "com.typesafe.akka" %% "akka-stream" % akkaVersion,
     "com.typesafe" % "config" % "1.4.2",
     "ch.qos.logback" % "logback-classic" % "1.4.11",
+    "org.apache.pekko" %% "pekko-testkit" % pekkoVersion % Test,
+    "org.apache.pekko" %% "pekko-http-testkit" % pekkoHttpVersion % Test,
     "com.typesafe.akka" %% "akka-testkit" % akkaVersion % Test,
     "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion % Test,
     "org.scalatest" %% "scalatest" % "3.2.16" % Test
