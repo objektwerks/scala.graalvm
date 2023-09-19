@@ -1,6 +1,6 @@
 Scala Graalvm
 -------------
->Pekko-Http server built and deployed to Graalvm using Scala 3.
+>Pekko-Http server built and deployed to JDK 21 Graalvm using Scala 3.
 
 Install
 -------
