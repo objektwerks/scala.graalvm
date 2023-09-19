@@ -11,18 +11,17 @@ import org.scalatest.BeforeAndAfterAll
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
 
-class ServerTest extends AnyWordSpec with Matchers with ScalatestRouteTest with BeforeAndAfterAll {
+class ServerTest extends AnyWordSpec with Matchers with ScalatestRouteTest with BeforeAndAfterAll:
   val actorRefFactory = ActorSystem.create("now", ConfigFactory.load("test.conf"))
 
   val server = Http()
     .newServerAt("localhost", 0)
     .bindFlow(Router.route)
 
-  override protected def afterAll(): Unit = {
+  override protected def afterAll(): Unit =
     server
       .flatMap(_.unbind())
       .onComplete(_ => system.terminate())
-  }
 
   "Server" should {
     "get now" in {
@@ -31,4 +30,3 @@ class ServerTest extends AnyWordSpec with Matchers with ScalatestRouteTest with 
       }
     }
   }
-}
