@@ -7,7 +7,10 @@ scalaVersion := "2.13.12"
 libraryDependencies ++= {
   val akkaVersion = "2.6.21" // Don't upgrade due to BUSL 1.1!
   val akkaHttpVersion = "10.2.10" // Don't upgrade due to BUSL 1.1!
+  val pekkoVersion = "1.0.1"
   Seq(
+    "org.apache.pekko" %% "pekko-actor" % pekkoVersion,
+    "org.apache.pekko" %% "pekko-http" % "1.0.0",
     "com.typesafe.akka" %% "akka-actor" % akkaVersion,
     "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
     "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
