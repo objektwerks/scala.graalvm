@@ -16,7 +16,7 @@ class ServerTest extends AnyWordSpec with Matchers with ScalatestRouteTest with 
 
   val server = Http()
     .newServerAt("localhost", 0)
-    .bindFlow(Server.route)
+    .bindFlow(Router.route)
 
   override protected def afterAll(): Unit = {
     server
@@ -26,7 +26,7 @@ class ServerTest extends AnyWordSpec with Matchers with ScalatestRouteTest with 
 
   "Server" should {
     "get now" in {
-      Get("/now") ~> Server.route ~> check {
+      Get("/now") ~> Router.route ~> check {
         status shouldBe StatusCodes.OK
       }
     }
