@@ -9,8 +9,9 @@ libraryDependencies ++= {
   val pekkoHttpVersion = "1.0.0"
   Seq(
     "org.apache.pekko" %% "pekko-actor" % pekkoVersion,
-    "org.apache.pekko" %% "pekko-http" % pekkoHttpVersion,
     "org.apache.pekko" %% "pekko-stream" % pekkoVersion,
+    "org.apache.pekko" %% "pekko-http" % pekkoHttpVersion,
+    "org.apache.pekko" %% "pekko-http-spray-json" % pekkoHttpVersion,
     "com.typesafe" % "config" % "1.4.2",
     "ch.qos.logback" % "logback-classic" % "1.4.11",
     "org.apache.pekko" %% "pekko-testkit" % pekkoVersion % Test,
