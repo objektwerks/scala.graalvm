@@ -1,11 +1,11 @@
 package objektwerks
 
+import com.typesafe.config.ConfigFactory
+
 import org.apache.pekko.actor.ActorSystem
 import org.apache.pekko.http.scaladsl.Http
 import org.apache.pekko.http.scaladsl.model.StatusCodes
 import org.apache.pekko.http.scaladsl.testkit.ScalatestRouteTest
-
-import com.typesafe.config.ConfigFactory
 
 import org.scalatest.BeforeAndAfterAll
 import org.scalatest.matchers.should.Matchers
