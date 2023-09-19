@@ -1,12 +1,9 @@
 package objektwerks
 
-import akka.actor.ActorSystem
-
 import org.apache.pekko.actor.ActorSystem
 import org.apache.pekko.http.scaladsl.Http
 import org.apache.pekko.http.scaladsl.model.StatusCodes.OK
-import org.apache.pekko.http.scaladsl.server.Directives.*
-
+import org.apache.pekko.http.scaladsl.server.Directives._
 
 import com.typesafe.config.ConfigFactory
 
