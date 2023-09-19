@@ -2,12 +2,8 @@ package objektwerks
 
 import com.typesafe.config.ConfigFactory
 
-import java.time.LocalDateTime
-
 import org.apache.pekko.actor.ActorSystem
 import org.apache.pekko.http.scaladsl.Http
-import org.apache.pekko.http.scaladsl.model.StatusCodes.OK
-import org.apache.pekko.http.scaladsl.server.Directives.*
 
 import scala.io.StdIn
 import scala.concurrent.ExecutionContext
