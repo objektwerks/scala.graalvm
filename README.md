@@ -26,5 +26,5 @@ Execute
 
 Resources
 ---------
-1. Gaalvm: https://www.graalvm.org/docs/introduction/
-2. Packager: https://www.scala-sbt.org/sbt-native-packager/formats/graalvm-native-image.html
+1. [GraalVM](https://www.graalvm.org/docs/introduction/)
+2. [Sbt Packager](https://www.scala-sbt.org/sbt-native-packager/formats/graalvm-native-image.html)
