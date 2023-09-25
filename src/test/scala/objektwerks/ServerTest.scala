@@ -11,7 +11,7 @@ import org.scalatest.BeforeAndAfterAll
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
 
-class ServerTest extends AnyWordSpec with Matchers with ScalatestRouteTest with BeforeAndAfterAll:
+final class ServerTest extends AnyWordSpec with Matchers with ScalatestRouteTest with BeforeAndAfterAll:
   val actorRefFactory = ActorSystem.create("now", ConfigFactory.load("test.conf"))
 
   val server = Http()
