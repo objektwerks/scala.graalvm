@@ -23,7 +23,7 @@ Run
 
 Package
 -------
->Takes around 60 seconds. **Note:** Only 1 main class allowed in project.
+>Takes around 60 seconds. **Note:** Only 1 main class is allowed in an sbt-native-packager project.
 1. sbt 'show graalvm-native-image:packageBin'
 
 Execute
