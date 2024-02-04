@@ -3,7 +3,7 @@ enablePlugins(GraalVMNativeImagePlugin)
 name := "scala.graalvm"
 organization := "objektwerks"
 version := "0.2-SNAPSHOT"
-scalaVersion := "3.4.0-RC3"
+scalaVersion := "3.4.0-RC4"
 libraryDependencies ++= {
   val pekkoVersion = "1.0.1"
   val pekkoHttpVersion = "1.0.0"
