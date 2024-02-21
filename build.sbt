@@ -5,7 +5,7 @@ organization := "objektwerks"
 version := "0.2-SNAPSHOT"
 scalaVersion := "3.4.1-RC1"
 libraryDependencies ++= {
-  val pekkoVersion = "1.0.1"
+  val pekkoVersion = "1.0.2"
   val pekkoHttpVersion = "1.0.1"
   Seq(
     "org.apache.pekko" %% "pekko-actor" % pekkoVersion,
