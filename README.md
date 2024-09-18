@@ -1,16 +1,16 @@
 Scala Graalvm
 -------------
->Pekko-Http server built and deployed to JDK 21 GraalVM using Scala 3.
+>Pekko-Http server built and deployed to JDK 23 GraalVM using Scala 3.
 
 Install
 -------
 >[GraalVM Getting Started](https://www.graalvm.org/docs/getting-started/)
 
 >Install:
-1. tar -xzf graalvm-jdk-21_macos-aarch64_bin
-2. sudo mv graalvm-jdk-21+35.1 /Library/Java/JavaVirtualMachines
-3. sudo xattr -r -d com.apple.quarantine /Library/Java/JavaVirtualMachines/graalvm-jdk-21+35.1
->Step 3 fixes this error: ***graalvm-jdk-21+35.1 is damanged and can't be opened.***
+1. tar -xzf graalvm-jdk-23_macos-aarch64_bin
+2. sudo mv graalvm-jdk-23+37.1 /Library/Java/JavaVirtualMachines
+3. sudo xattr -r -d com.apple.quarantine /Library/Java/JavaVirtualMachines/graalvm-jdk-23+37.1
+>Step 3 fixes this error: ***graalvm-jdk-23+37.1 is damanged and can't be opened.***
 
 Test
 ----
