@@ -10,7 +10,7 @@ Install
 1. tar -xzf graalvm-jdk-23_macos-aarch64_bin
 2. sudo mv graalvm-jdk-23+37.1 /Library/Java/JavaVirtualMachines
 3. sudo xattr -r -d com.apple.quarantine /Library/Java/JavaVirtualMachines/graalvm-jdk-23+37.1
->Step 3 fixes this error: ***graalvm-jdk-23+37.1 is damanged and can't be opened.***
+>Step 3 fixes this error: ***graalvm-jdk-23+37.1 is damaged and can't be opened.***
 
 Test
 ----
