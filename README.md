@@ -1,16 +1,16 @@
 Scala Graalvm
 -------------
->Pekko-Http server built and deployed to JDK 23 GraalVM using Scala 3.
+>Pekko-Http server built and deployed to JDK 24 GraalVM using Scala 3.
 
 Install
 -------
 >[GraalVM Getting Started](https://www.graalvm.org/docs/getting-started/)
 
 >Install:
-1. tar -xzf graalvm-jdk-23_macos-aarch64_bin
-2. sudo mv graalvm-jdk-23+37.1 /Library/Java/JavaVirtualMachines
-3. sudo xattr -r -d com.apple.quarantine /Library/Java/JavaVirtualMachines/graalvm-jdk-23+37.1
->Step 3 fixes this error: ***graalvm-jdk-23+37.1 is damaged and can't be opened.***
+1. tar -xzf graalvm-jdk-24_macos-aarch64_bin
+2. sudo mv graalvm-jdk-24+36.1 /Library/Java/JavaVirtualMachines
+3. sudo xattr -r -d com.apple.quarantine /Library/Java/JavaVirtualMachines/graalvm-jdk-24+36.1
+>Step 3 fixes this error: ***graalvm-jdk-24+36.1 is damaged and can't be opened.***
 
 Test
 ----
