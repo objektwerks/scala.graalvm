@@ -6,15 +6,14 @@ version := "0.2-SNAPSHOT"
 scalaVersion := "3.8.2-RC2"
 libraryDependencies ++= {
   val pekkoVersion = "2.0.0-M1"
-  val pekkoHttpVersion = "2.0.0-M1"
   Seq(
     "org.apache.pekko" %% "pekko-actor" % pekkoVersion,
     "org.apache.pekko" %% "pekko-stream" % pekkoVersion,
-    "org.apache.pekko" %% "pekko-http" % pekkoHttpVersion,
+    "org.apache.pekko" %% "pekko-http" % pekkoVersion,
     "com.typesafe" % "config" % "1.4.3",
     "ch.qos.logback" % "logback-classic" % "1.5.25",
     "org.apache.pekko" %% "pekko-testkit" % pekkoVersion % Test,
-    "org.apache.pekko" %% "pekko-http-testkit" % pekkoHttpVersion % Test,
+    "org.apache.pekko" %% "pekko-http-testkit" % pekkoVersion % Test,
     "org.scalatest" %% "scalatest" % "3.2.19" % Test
   )
 }
