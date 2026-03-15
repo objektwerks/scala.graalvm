@@ -11,7 +11,7 @@ libraryDependencies ++= {
     "org.apache.pekko" %% "pekko-stream" % pekkoVersion,
     "org.apache.pekko" %% "pekko-http" % pekkoVersion,
     "com.typesafe" % "config" % "1.4.3",
-    "ch.qos.logback" % "logback-classic" % "1.5.25",
+    "ch.qos.logback" % "logback-classic" % "1.5.32",
     "org.apache.pekko" %% "pekko-testkit" % pekkoVersion % Test,
     "org.apache.pekko" %% "pekko-http-testkit" % pekkoVersion % Test,
     "org.scalatest" %% "scalatest" % "3.2.19" % Test
